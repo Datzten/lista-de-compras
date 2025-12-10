@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <img src="styles/assets/logo.png" alt="logo da marca quicklist" />
+
+    <header>
+      <a href="">Voltar</a>
+      <h1 id="tittle">Compras da semana</h1>
+    </header>
+
+    <main>
+      <form action="">
+        <div>
+          <input type="text" placeholder="Adicione um novo intem" id="input" />
+          <button id="add"></button>
+        </div>
+
+        <div>
+          <input type="checkbox" id="groceries" />
+          <label for="" id="gocery1">Pão de forma</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="groceries" />
+          <label for="" id="gocery">Café preto</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="groceries" />
+          <label for="" id="gocery">Suco de laranja</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="groceries" />
+          <label for="" id="gocery">Bolacha</label>
+        </div>
+      </form>
+
+      <div>
+        <img src="" alt="exclamação chamando atenção">
+        <input
+          type="text"
+          id="removedItems"
+          placeholder="O item foi removido com sucesso"
+        />
+        <span class="close-Btn" id="closeBtn">&times;</span>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+
+  </body>
 </html>
