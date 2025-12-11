@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+header{
+    margin-left: 23rem;
+}
+
+.back {
+    padding-block: 4rem 1rem;
+}
+
+.title{
+    padding-bottom: 3rem;
+}
