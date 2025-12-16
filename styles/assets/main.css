@@ -1,3 +1,43 @@
 main {
+    font: var(--font-family);
     margin-left: 23rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+    font: var(--font-family);
+    
+}
+
+.addItem {
+    font: var(--font-family);
+    border-radius: 8px;
+    padding-block: 11px;
+    padding-left: 1rem;
+    width: 28.18rem;
+}
+
+.addButton {
+    padding-inline: 1.55rem;
+    padding-block: 0.75rem;
+    height: 2.75rem;
+    width: 10rem;
+    background-color: var(--color-brand);
+    border-radius: 8px;
+    color: white;
+}
+
+.inputselection {
+    padding-top: 2.5rem;
+    height: 2.75rem;
+    input {
+        margin-inline: 0.75rem;
+        padding-block: 0.5rem;
+    }
+
+    label {
+        justify-content: center;
+    }
 }
