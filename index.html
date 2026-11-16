@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de compras | Quicklist</title>
+</head>
+<body>
+    <main class="page">
+        <header class="brand" aria-label="Quicklist">
+            <span class="brand-mark" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>quicklist</span>
+        </header>
+
+        <a class="back-link" href="index.html">← Voltar</a>
+
+        <section aria-labelledby="list-title">
+            <h1 id="list-title">Compras da semana</h1>
+
+            <div class="add-item">
+                <input type="text" placeholder="Adicione um novo item" aria-label="Nome do novo item">
+                <button type="button">Adicionar item</button>
+            </div>
+
+            <ul class="shopping-list">
+                <li class="shopping-item">
+                    <input type="checkbox" id="item-bread">
+                    <label for="item-bread">Pão de forma</label>
+                    <button class="remove-button" type="button" aria-label="Remover Pão de forma">
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"></path>
+                        </svg>
+                    </button>
+                </li>
+                <li class="shopping-item">
+                    <input type="checkbox" id="item-coffee">
+                    <label for="item-coffee">Café preto</label>
+                    <button class="remove-button" type="button" aria-label="Remover Café preto">
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"></path>
+                        </svg>
+                    </button>
+                </li>
+                <li class="shopping-item">
+                    <input type="checkbox" id="item-juice">
+                    <label for="item-juice">Suco de laranja</label>
+                    <button class="remove-button" type="button" aria-label="Remover Suco de laranja">
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"></path>
+                        </svg>
+                    </button>
+                </li>
+                <li class="shopping-item">
+                    <input type="checkbox" id="item-cookie">
+                    <label for="item-cookie">Bolacha</label>
+                    <button class="remove-button" type="button" aria-label="Remover Bolacha">
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <aside class="notice" role="status" aria-label="Aviso">
+        <span class="notice-icon" aria-hidden="true">!</span>
+        <span class="notice-message">O item foi removido da lista</span>
+        <span class="notice-close" aria-hidden="true">×</span>
+    </aside>
+</body>
+</html>
