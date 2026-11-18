@@ -1,7 +1,9 @@
+/* Include padding and borders inside the declared element size. */
 * {
     box-sizing: border-box;
 }
 
+/* Define the page background and default typography. */
 body {
     min-height: 100vh;
     margin: 0;
@@ -22,12 +24,14 @@ input {
     font: inherit;
 }
 
+/* Center the main content and limit its width. */
 .page {
     width: min(100% - 48px, 688px);
     margin: 0 auto;
     padding: 22px 0 32px;
 }
 
+/* Style the Quicklist brand in the page header. */
 .brand {
     display: flex;
     align-items: center;
@@ -69,6 +73,7 @@ input {
     margin-left: 7px;
 }
 
+/* Style the navigation link above the list title. */
 .back-link {
     display: inline-block;
     margin-top: 70px;
@@ -77,12 +82,14 @@ input {
     text-decoration: none;
 }
 
+/* Style the shopping-list title. */
 h1 {
     margin: 20px 0 48px;
     font-size: 28px;
     line-height: 1.2;
 }
 
+/* Arrange the text field and submit button. */
 .add-item {
     display: flex;
     gap: 18px;
@@ -123,6 +130,7 @@ h1 {
     font-weight: 700;
 }
 
+/* Arrange the shopping items in a vertical list. */
 .shopping-list {
     display: grid;
     gap: 13px;
@@ -131,6 +139,7 @@ h1 {
     list-style: none;
 }
 
+/* Style an individual shopping-list row. */
 .shopping-item {
     display: flex;
     min-height: 54px;
@@ -144,6 +153,7 @@ h1 {
 }
 
 .shopping-item input[type="checkbox"] {
+    order: 1;
     width: 18px;
     height: 18px;
     flex: 0 0 18px;
@@ -153,11 +163,13 @@ h1 {
 }
 
 .shopping-item label {
+    order: 2;
     flex: 1;
     cursor: pointer;
 }
 
 .remove-button {
+    order: 3;
     display: grid;
     width: 28px;
     height: 32px;
@@ -179,6 +191,7 @@ h1 {
     stroke-width: 1.5;
 }
 
+/* Display the removal confirmation at the bottom of the screen. */
 .notice {
     position: fixed;
     right: 24px;
@@ -197,6 +210,11 @@ h1 {
     box-shadow: 0 4px 14px rgba(67, 18, 30, 0.18);
     font-size: 16px;
     font-weight: 700;
+}
+
+/* Hide the notice whenever the hidden attribute is active. */
+.notice[hidden] {
+    display: none;
 }
 
 .notice-icon {
@@ -222,7 +240,11 @@ h1 {
     height: 30px;
     flex: 0 0 28px;
     place-items: center;
+    border: 0;
     border-left: 1px solid rgba(255, 255, 255, 0.45);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
     font-size: 25px;
     font-weight: 400;
     line-height: 1;

@@ -22,10 +22,10 @@
         <section aria-labelledby="list-title">
             <h1 id="list-title">Compras da semana</h1>
 
-            <div class="add-item">
-                <input type="text" placeholder="Adicione um novo item" aria-label="Nome do novo item">
-                <button type="button">Adicionar item</button>
-            </div>
+            <form class="add-item">
+                <input id="input" type="text" placeholder="Adicione um novo item" aria-label="Nome do novo item">
+                <button type="submit">Adicionar item</button>
+            </form>
 
             <ul class="shopping-list">
                 <li class="shopping-item">
@@ -67,10 +67,13 @@
             </ul>
         </section>
     </main>
+    <!-- Display a confirmation after an item is removed. -->
     <aside class="notice" role="status" aria-label="Aviso">
+        <!-- Keep decorative elements away from screen-reader output. -->
         <span class="notice-icon" aria-hidden="true">!</span>
         <span class="notice-message">O item foi removido da lista</span>
-        <span class="notice-close" aria-hidden="true">×</span>
+        <button class="notice-close" type="button" aria-label="Fechar aviso">×</button>
     </aside>
+    <script src="scripts.js"></script>
 </body>
 </html>
